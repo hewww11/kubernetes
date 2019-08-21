@@ -111,7 +111,7 @@ master 节点需要提供以下服务：
         WantedBy=multi-user.target
         ```
 
-        > systemctl daemon  
+        > systemctl daemon-reload  
         > systemctl enable etcd  
         > systemctl start etcd
     3. 查看服务是否正常启动
@@ -188,7 +188,7 @@ master 节点需要提供以下服务：
     WantedBy=multi-user.target
     ```
 
-    > systemctl daemon  
+    > systemctl daemon-reload  
     > systemctl enable kube-apiserver  
     > systemctl start kube-apiserver
 4. 查看服务是否正常启动
@@ -258,7 +258,7 @@ master 节点需要提供以下服务：
     WantedBy=multi-user.target
     ```
 
-    > systemctl daemon  
+    > systemctl daemon-reload  
     > systemctl enable kube-controller-manager  
     > systemctl start kube-controller-manager
 5. 查看服务是否正常启动
@@ -303,7 +303,7 @@ master 节点需要提供以下服务：
     WantedBy=multi-user.target
     ```
 
-    > systemctl daemon  
+    > systemctl daemon-reload  
     > systemctl enable kube-scheduler  
     > systemctl start kube-scheduler
 4. 查看服务是否正常启动
